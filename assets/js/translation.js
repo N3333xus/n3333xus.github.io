@@ -1,4 +1,4 @@
-let homeContent = { 
+export const homeContent = { 
   pt: `
     <div class="content-wrapper">
       <section class="home ">
@@ -27,7 +27,7 @@ let homeContent = {
   `
 };
 
-let aboutContent = {
+export const aboutContent = {
   pt: `
     <section class="about-wrapper">
       <div class="about-section about-content-card">
@@ -58,7 +58,7 @@ let aboutContent = {
   `
 };
 
-let workContent = {
+export const workContent = {
   pt: `
     <div class="work-content work-content-card">
       <div class="work-gallery">
@@ -101,7 +101,7 @@ let workContent = {
   `
 };
 
-let skillsContent = {
+export const skillsContent = {
   pt: `
     <div class="skills-section">
       <div class="skills-content skills-content-card">
@@ -142,25 +142,3 @@ let skillsContent = {
   `
 };
 
-function changeLanguage(lang) {
-  const contentDiv = document.getElementById('content');
-  
-  contentDiv.innerHTML = homeContent[lang];
-
-
-  const currentSection = document.querySelector(".current-section"); // Assuming you set the active section
-  if (currentSection) {
-    if (currentSection.id === 'about') {
-      contentDiv.innerHTML = aboutContent[lang];
-    } else if (currentSection.id === 'work') {
-      contentDiv.innerHTML = workContent[lang];
-    } else if (currentSection.id === 'skills') {
-      contentDiv.innerHTML = skillsContent[lang];
-    }
-  }
-}
-
-document.getElementById('pt').addEventListener('click', () => changeLanguage('pt'));
-document.getElementById('en').addEventListener('click', () => changeLanguage('en'));
-
-changeLanguage('pt');

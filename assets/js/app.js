@@ -1,6 +1,6 @@
 
 
-let homeContent = 
+const homeContent = 
     `
     <div class="content-wrapper">
       <section class="home ">
@@ -15,7 +15,7 @@ let homeContent =
     </div>
     `;
 
-let aboutContent = `
+const aboutContent = `
 
 <section class="about-wrapper">
   <div class="about-section about-content-card">
@@ -32,7 +32,7 @@ let aboutContent = `
   </div>
 </section>`;
 
-let workContent = `
+const workContent = `
 
 <div class="work-content work-content-card">
     <div class="work-gallery">
@@ -54,7 +54,7 @@ let workContent = `
     </div>
 </div>`;
 
-let skillsContent = `<div class="skills-section">
+const skillsContent = `<div class="skills-section">
 <div class="skills-content skills-content-card">
     <div class="skills-title">
         <h1>Habilidades</h1>
@@ -72,8 +72,6 @@ let skillsContent = `<div class="skills-section">
 </div>
 </div>`;
 
-
-
 const home = document.querySelector("#home");
 const about = document.querySelector("#about");
 const work = document.querySelector("#work");
@@ -85,235 +83,85 @@ let phoneContact = document.querySelector(".letsTalk");
 let enter = document.querySelector(".preloader-wrapper");
 
 document.addEventListener("DOMContentLoaded", () => {
-  
-  let enterSequence = new TimelineMax({});
+  const enterSequence = new TimelineMax({});
+  const animations = [
+    { selector: ".letsTalk", props: { x: -300 }, duration: 1 },
+    { selector: "#home", props: { opacity: 0 }, duration: 0.1 },
+    { selector: "#home", props: { y: 400, fontSize: 250 }, duration: 0.3 },
+    { selector: "#about", props: { opacity: 0 }, duration: 0.1 },
+    { selector: "#about", props: { y: 400, fontSize: 250 }, duration: 0.3 },
+    { selector: "#work", props: { opacity: 0 }, duration: 0.1 },
+    { selector: "#work", props: { y: 400, fontSize: 250 }, duration: 0.3 },
+    { selector: "#skills", props: { opacity: 0 }, duration: 0.1 },
+    { selector: "#skills", props: { y: 400, fontSize: 250 }, duration: 0.3 },
+    { selector: "#pt", props: { opacity: 0 }, duration: 0.1 },
+    { selector: "#pt", props: { y: 400, fontSize: 250 }, duration: 0.3 },
+    { selector: "#en", props: { opacity: 0 }, duration: 0.1 },
+    { selector: "#en", props: { y: 400, fontSize: 250 }, duration: 0.3 },
+    { selector: ".home", props: { opacity: 0, x: -300 }, duration: 1 },
+    { selector: ".t1", props: { opacity: 0 }, duration: 0.1 },
+    { selector: ".t2", props: { opacity: 0 }, duration: 0.1 },
+    { selector: ".t3", props: { opacity: 0 }, duration: 0.1 },
+    { selector: ".interface-settings li", props: { x: 550 }, duration: 0.9 },
+  ];
 
-  contentBox.innerHTML = "";
-  contentBox.innerHTML = homeContent;
-  enterSequence
-    .from(".letsTalk", 1, {
-      x: -300
-    })
-    .from("#home", 0.1, {
-      opacity: 0
-    })
-    .from("#home", 0.3, {
-      y: 400,
-      fontSize: 250
-    })
-    .from("#about", 0.1, {
-      opacity: 0
-    })
-    .from("#about", 0.3, {
-      y: 400,
-      fontSize: 250
-    })
-    .from("#work", 0.1, {
-      opacity: 0
-    })
-    .from("#work", 0.3, {
-      y: 400,
-      fontSize: 250
-    })
-    .from("#skills", 0.1, {
-      opacity: 0
-    })
-    .from("#skills", 0.3, {
-      y: 400,
-      fontSize: 250
-    })
-    .from("#pt", 0.1, {
-      opacity: 0
-    })
-    .from("#pt", 0.3, {
-      y: 400,
-      fontSize: 250
-    })
-    .from("#en", 0.1, {
-      opacity: 0
-    })
-    .from("#en", 0.3, {
-      y: 400,
-      fontSize: 250
-    })
-    .from(".home", 1, {
-      opacity: 0,
-      x: -300
-    })
-    .from(".t1", 0.1, {
-      opacity: 0
-    })
-    .from(".t2", 0.1, {
-      opacity: 0
-    })
-    .from(".t3", 0.1, {
-      opacity: 0
-    })
-    .from(".interface-settings li", 0.9, {
-      x: 550
+  const animateElements = (sequence, animations) => {
+    animations.forEach(({ selector, props, duration }) => {
+      sequence.from(selector, duration, props);
     });
+  };
 
-  home.addEventListener("click", () => {
-    contentBox.innerHTML = "";
-    contentBox.innerHTML = homeContent;
-    let openHome = new TimelineMax({});
-    openHome
-      .from(".home", 1, {
-        opacity: 0,
-        x: -300
-      })
-      .from(".t1", 0.1, {
-        opacity: 0
-      })
-      .from(".t2", 0.1, {
-        opacity: 0
-      })
-      .from(".t3", 0.1, {
-        opacity: 0
-      });
-  });
-  about.addEventListener("click", () => {
-    contentBox.innerHTML = "";
-    contentBox.innerHTML = aboutContent;
-    let openAbout = new TimelineMax({});
-    openAbout
-      .from(".about-section", 1, {
-        opacity: 0,
-        x: 300
-      })
-      .from(
-        ".about-title h1",
-        0.1,
-        {
-          opacity: 0
-        },
-        "ww"
-      )
-      .from(".about-title h1", 0.1, {
-        opacity: 1
-      })
-      .from(".about-title h1", 0.1, {
-        opacity: 0
-      })
-      .from(".about-title h1", 0.1, {
-        opacity: 1
-      })
-      .from(".about-title h1", 0.1, {
-        opacity: 0
-      })
-      .from(".about-text p", 0.2, {
-        opacity: 0
-      });
-  });
-  work.addEventListener("click", () => {
-    contentBox.innerHTML = "";
-    contentBox.innerHTML = workContent;
-    let openWork = new TimelineMax({});
+  contentBox.innerHTML = homeContent;
+  animateElements(enterSequence, animations);
 
-    openWork
-      .from(".work-content-card", 1, {
-        opacity: 0,
-        x: -300
-      })
-      .from(
-        ".card-5",
-        0.1,
-        {
-          opacity: 0
-        },
-        "op"
-      )
-      .from(
-        ".card-2",
-        0.1,
-        {
-          opacity: 0
-        },
-        "op"
-      )
-      .from(
-        ".card-3",
-        0.1,
-        {
-          opacity: 0
-        },
-        "op"
-      )
-      .from(
-        ".card-6",
-        0.1,
-        {
-          opacity: 0
-        },
-        "oz"
-      )
-      .from(
-        ".card-1",
-        0.1,
-        {
-          opacity: 0
-        },
-        "oz"
-      )
-      .from(
-        ".card-4",
-        0.1,
-        {
-          opacity: 0
-        },
-        "oz"
-      );
-
- 
-  });
-
-  skills.addEventListener("click", () => {
+  const handleClick = (content, animations) => {
     contentBox.innerHTML = "";
-    contentBox.innerHTML = skillsContent;
-    let openSkills = new TimelineMax({});
-    openSkills
-      .from(".skills-content", 0.6, {
-        opacity: 0,
-        x: 300
-      })
-      .from(
-        ".skills-title h1",
-        0.1,
-        {
-          opacity: 0
-        },
-        "ww"
-      )
-      .from(".skills-title h1", 0.1, {
-        opacity: 1
-      })
-      .from(".skills-title h1", 0.1, {
-        opacity: 0
-      })
-      .from(".skills-title h1", 0.1, {
-        opacity: 1
-      })
-      .from(".skills-title h1", 0.1, {
-        opacity: 0
-      })
-      .from(
-        ".skills-text",
-        0.2,
-        {
-          opacity: 0
-        },
-        "ww",
-        1
-      );
-  });
-  let openContact = new TimelineMax({ paused: true, reversed: true });
+    contentBox.innerHTML = content;
+    const openTimeline = new TimelineMax({});
+    animateElements(openTimeline, animations);
+  };
+
+  home.addEventListener("click", () => handleClick(homeContent, [
+    { selector: ".home", props: { opacity: 0, x: -300 }, duration: 1 },
+    { selector: ".t1", props: { opacity: 0 }, duration: 0.1 },
+    { selector: ".t2", props: { opacity: 0 }, duration: 0.1 },
+    { selector: ".t3", props: { opacity: 0 }, duration: 0.1 },
+  ]));
+
+  about.addEventListener("click", () => handleClick(aboutContent, [
+    { selector: ".about-section", props: { opacity: 0, x: 300 }, duration: 1 },
+    { selector: ".about-title h1", props: { opacity: 0 }, duration: 0.1 },
+    { selector: ".about-title h1", props: { opacity: 1 }, duration: 0.1 },
+    { selector: ".about-title h1", props: { opacity: 0 }, duration: 0.1 },
+    { selector: ".about-title h1", props: { opacity: 1 }, duration: 0.1 },
+    { selector: ".about-title h1", props: { opacity: 0 }, duration: 0.1 },
+    { selector: ".about-text p", props: { opacity: 0 }, duration: 0.2 },
+  ]));
+
+  work.addEventListener("click", () => handleClick(workContent, [
+    { selector: ".work-content-card", props: { opacity: 0, x: -300 }, duration: 1 },
+    { selector: ".card-5", props: { opacity: 0 }, duration: 0.1 },
+    { selector: ".card-2", props: { opacity: 0 }, duration: 0.1 },
+    { selector: ".card-3", props: { opacity: 0 }, duration: 0.1 },
+    { selector: ".card-6", props: { opacity: 0 }, duration: 0.1 },
+    { selector: ".card-1", props: { opacity: 0 }, duration: 0.1 },
+    { selector: ".card-4", props: { opacity: 0 }, duration: 0.1 },
+  ]));
+
+  skills.addEventListener("click", () => handleClick(skillsContent, [
+    { selector: ".skills-content", props: { opacity: 0, x: 300 }, duration: 0.6 },
+    { selector: ".skills-title h1", props: { opacity: 0 }, duration: 0.1 },
+    { selector: ".skills-title h1", props: { opacity: 1 }, duration: 0.1 },
+    { selector: ".skills-title h1", props: { opacity: 0 }, duration: 0.1 },
+    { selector: ".skills-title h1", props: { opacity: 1 }, duration: 0.1 },
+    { selector: ".skills-title h1", props: { opacity: 0 }, duration: 0.1 },
+    { selector: ".skills-text", props: { opacity: 0 }, duration: 0.2 },
+  ]));
+
+  const openContact = new TimelineMax({ paused: true, reversed: true });
   phoneContact.addEventListener("click", () => {
     phoneContact.classList.toggle("opened");
-
     openContact.reversed() ? openContact.play() : openContact.reverse();
-
-    openContact.to(".interface-settings li", 0.3, {
-      x: 550
-    });
+    openContact.to(".interface-settings li", 0.3, { x: 550 });
   });
 });
