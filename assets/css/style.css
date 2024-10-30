@@ -201,6 +201,7 @@ img{
 }
 .about-title h1{
     font-size: 60px;
+    color: var(--y-selected-text);;
 }
 .about-text p{
     font-size: 20px;
@@ -321,11 +322,12 @@ img{
     background: rgba(0, 0, 0, 0.6);;
 }
 .skills-title h1{
-    font-size: 60px;   
+    font-size: 60px;
+    color : var(--y-selected-text);   
 }
 .skills-text{
     font-size: 25px;
-    color: #00e1ff;
+    color: var(--y-non-selected-text);
     z-index: 2;
 }
 /* CONTACT  */
