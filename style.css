@@ -91,6 +91,17 @@ img{
 }
 
 
+.langs {
+    display: flex; /* Para centralizar os elementos internos também */
+    margin-top: 80px;
+    font-size: 25px;
+    justify-content: center; /* Centraliza horizontalmente */
+}
+.langs span{
+    margin: 0.9px;
+}
+
+
 
 .content-card{
     
@@ -99,7 +110,7 @@ img{
     width: 70%;
     position: absolute;
     left: 17%;
-    top: 150px;
+    top: 50px;
     -webkit-box-shadow: inset 200px 21px 194px 20px #12a6c03b;
     -moz-box-shadow: inset 200px 21px 194px 20px #c012b73b;
     box-shadow: inset 200px 21px 194px 20px #12c0953b;
@@ -136,7 +147,6 @@ img{
 }
 
 .greetings{
-    background: url(./gifs/tumblr_oezv38ikwg1sznfdio1_500.gif);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -154,7 +164,7 @@ img{
     width: 70%;
     position: absolute;
     left: 15%;
-    margin-top: 120px;
+    margin-top: 50px;
     -webkit-box-shadow: inset 200px 21px 194px 20px #12a6c03b;
     -moz-box-shadow: inset 200px 21px 194px 20px #c012b73b;
     box-shadow: inset 200px 21px 194px 20px #12c0953b;
@@ -207,7 +217,7 @@ img{
     width: 70%;
     text-align: center;
     margin: 0 auto;
-    margin-top: 130px;
+    margin-top: 50px;
     -webkit-box-shadow: inset 200px 21px 194px 20px #12a6c03b;
     -moz-box-shadow: inset 200px 21px 194px 20px #c012b73b;
     box-shadow: inset 200px 21px 194px 20px #12c0953b;

@@ -2,9 +2,9 @@ let homeContent = `<div class="content-wrapper">
 <section class="home ">
     <div class="greetings content-card">
         <div class="greetings-title">
-            <h1 class="t1"> Ola amigo </h1>
-            <h1 class="t2"> Meu nome é <span>Lucas</span> </h1>
-            <h1 class="t3">Eu sou um <span>Desenvolvedor de Software</span></h1>
+            <h1 class="t1">Ola amigo </h1>
+            <h1 class="t2">Meu nome é <span>Lucas</span> </h1>
+            <h1 class="t3">Eu <span>Desenvolvo Software</span></h1>
         </div>
 
     </div>
@@ -60,7 +60,7 @@ let skillsContent = `<div class="skills-section">
         <h1>Habilidades</h1>
     </div>
     <div class="skills-text">
-        <p> Minha especiliade inclui: <i class="fab fa-python"></i> <i class="fab fa-linux"></i> <i class="fas fa-database"></i></p>
+        <p> Minha especialidade inclui: <i class="fab fa-python"></i> <i class="fab fa-linux"></i> <i class="fas fa-database"></i></p>
         <p>- Python, Django, GNU/Linux e PostgreSQL </p>
         <p>Mas também uso: <i class="fa-brands fa-js"></i> <i class="fa-brands fa-php"></i> <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-git-alt"></i> <i class="fa-solid fa-server"></i></p>
         <p>- JavaScript, C#, PHP, Shell Scripts<br/>
@@ -77,11 +77,16 @@ const home = document.querySelector("#home");
 const about = document.querySelector("#about");
 const work = document.querySelector("#work");
 const skills = document.querySelector("#skills");
+const pt = document.querySelector("#pt");
+const en = document.querySelector("#en");
 let contentBox = document.querySelector(".content-wrapper");
 let phoneContact = document.querySelector(".letsTalk");
 let enter = document.querySelector(".preloader-wrapper");
 
 document.addEventListener("DOMContentLoaded", () => {
+  
+  
+
   let enterSequence = new TimelineMax({});
 
   contentBox.innerHTML = "";
@@ -115,6 +120,20 @@ document.addEventListener("DOMContentLoaded", () => {
       opacity: 0
     })
     .from("#skills", 0.3, {
+      y: 400,
+      fontSize: 250
+    })
+    .from("#pt", 0.1, {
+      opacity: 0
+    })
+    .from("#pt", 0.3, {
+      y: 400,
+      fontSize: 250
+    })
+    .from("#en", 0.1, {
+      opacity: 0
+    })
+    .from("#en", 0.3, {
       y: 400,
       fontSize: 250
     })
