@@ -151,9 +151,6 @@ const content = {
         work: "Projects",
         skills: "Skills"
       },
-      LetsTalk: {
-        contact: "Contact Me"
-      }
   }
 };
 let currentLanguage = 'pt';
@@ -163,9 +160,9 @@ const home = document.querySelector("#home");
 const about = document.querySelector("#about");
 const work = document.querySelector("#work");
 const skills = document.querySelector("#skills");
-let phoneContact = document.querySelector(".letsTalk");
 const pt = document.querySelector("#pt");
 const en = document.querySelector("#en");
+let interfaceSettings = document.querySelector(".interface-settings li")
 
 function updateNavbar() {
   navItems[0].textContent = content[currentLanguage].navbar.home;
@@ -174,9 +171,9 @@ function updateNavbar() {
   navItems[3].textContent = content[currentLanguage].navbar.skills;
 }
 
+
 contentBox.innerHTML = content[currentLanguage].home; 
 updateNavbar();
-
 
 const animateElements = (sequence, animations) => {
   animations.forEach(({ selector, props, duration }) => {
@@ -186,7 +183,6 @@ const animateElements = (sequence, animations) => {
 
 const enterSequence = new TimelineMax({});
 const initialAnimations = [
-  { selector: ".letsTalk", props: { x: -300 }, duration: 1 },
   { selector: "#home", props: { opacity: 0 }, duration: 0.1 },
   { selector: "#home", props: { y: 400, fontSize: 250 }, duration: 0.3 },
   { selector: "#about", props: { opacity: 0 }, duration: 0.1 },
@@ -203,7 +199,7 @@ const initialAnimations = [
   { selector: ".t1", props: { opacity: 0 }, duration: 0.1 },
   { selector: ".t2", props: { opacity: 0 }, duration: 0.1 },
   { selector: ".t3", props: { opacity: 0 }, duration: 0.1 },
-  { selector: ".interface-settings li", props: { x: 550 }, duration: 0.9 },
+  { selector: ".interface-settings li", props: { y: -1000 }, duration: 1.5 },// animação dos contatos
 ];
 
 animateElements(enterSequence, initialAnimations);
@@ -281,9 +277,3 @@ about.addEventListener("click", () => handleClick('about'));
 work.addEventListener("click", () => handleClick('work'));
 skills.addEventListener("click", () => handleClick('skills'));
 
-const openContact = new TimelineMax({ paused: true, reversed: true });
-phoneContact.addEventListener("click", () => {
-  phoneContact.classList.toggle("opened");
-  openContact.reversed() ? openContact.play() : openContact.reverse();
-  openContact.to(".interface-settings li", 0.3, { x: 550 });
-});

@@ -3,7 +3,7 @@
     --g-selected-text: #14fe17;
     --g-non-selected-text: #107c12;
     --b-selected-text: #14cffe;
-    --b-non-selected-text: #1B1C25;
+    --b-non-selected-text: #000000;
     --w-selected-text: #ffffff;
     --w-non-selected-text: #ff00c8;
     --y-selected-text: #F76C5E;
@@ -233,6 +233,7 @@ img{
     background: var(--y-selected-text);
     top: 0px;
     right: 0px;
+    
 }
 .work-gallery{
     padding:30px 0;
@@ -253,23 +254,12 @@ img{
     color: white;
     cursor: pointer;
 }
-.qr-card{
-   width: 150px;
-    
-}
+
 .workPic{
     width: 300px;
     height: 150px;
 }
-.mobile{
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-    padding: 10px 40px;
-    cursor: pointer;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.26), rgba(0, 195, 255, 0.26) , rgba(204, 0, 255, 0.397), rgba(0, 195, 255, 0.26), rgba(0, 0, 0, 0.26));
-    
-}
+
 .button-project {
     border: 1px solid var(--b-non-selected-text);
     display: inline-block;
@@ -292,8 +282,6 @@ img{
     position: absolute;
     left: 17%;
     top: 130px;
-    -webkit-box-shadow: inset 200px 21px 194px 20px #12a6c03b;
-    -moz-box-shadow: inset 200px 21px 194px 20px #c012b73b;
     box-shadow: inset 200px 21px 194px 20px #12c0953b;
 }
 .skills-content-card::before {
@@ -338,57 +326,7 @@ img{
     bottom: 0; 
     z-index: -1;
 }
-/* CONTACT BAR */
-.letsTalk{
-    text-align: center;
-    position: relative;;
-    width: 200px;
-    bottom: -10px;
-    left: 0px;
-    cursor: pointer;
-    z-index: 1;
-   
-}
-.phone-contact{
-    display: grid;
-    position: relative;;
-    width: 200px;
-    bottom: 10px;
-    cursor: pointer;
-    z-index: 1;
-}
 
-
-.letsTalk-icon{
-    font-size: 40px;
-    color: var(--w-non-selected-text);
-    animation: letsTalk1 .5s infinite alternate;
-}
-@keyframes letsTalk1 {
-    form{
-       color: var(--w-non-selected-text);
-      
-    }
-    to{
-        color: rgba(252, 0, 252, 0.295);
-    }
-}
-.letsTalk h1{
-    font-weight: 100;
-    font-size: 30px;
-    border-left:3px solid var(--w-non-selected-text);
-    border-right:3px solid var(--w-non-selected-text);
-    background-image: linear-gradient(to right, rgba(0, 195, 255, 0.26) , rgba(204, 0, 255, 0.397));
-    animation: letsTalk2 .5s infinite alternate;
-}
-@keyframes letsTalk2 {
-    form{
-       color: var(--w-non-selected-text);
-    }
-    to{
-        color: rgba(252, 0, 252, 0.295);
-    }
-}
 .settings-green{
     color:var(--g-selected-text);
 }
@@ -405,7 +343,8 @@ img{
 .interface-settings{
     position: fixed;
     bottom: 15px;
-    left: -350px;
+    /*left: 350px; me na possição dos contatos*/
+    
 }
 .interface-settings ul{
     display: flex;
@@ -414,8 +353,10 @@ img{
     padding: 20px;
 }
 .interface-settings i{
+
+    top: 50%;           /* Centraliza verticalmente */
     font-size: 40px;
-    padding-top:30px ;
+
 }
 
 
@@ -443,16 +384,7 @@ img{
     .work-content-card{
         margin-top: 90px;
     }
-    .phone-contact{
-        width: 90px;
-    }
-    .letsTalk{
-        width: 90px;
-    }
-    
-    .letsTalk h1{
-        font-size: 20px;
-    }
+
     .skills-content{
         top: 100px;
         padding: 60px 0 60px 100px;
