@@ -199,8 +199,13 @@ const initialAnimations = [
   { selector: ".t1", props: { opacity: 0 }, duration: 0.1 },
   { selector: ".t2", props: { opacity: 0 }, duration: 0.1 },
   { selector: ".t3", props: { opacity: 0 }, duration: 0.1 },
-  { selector: ".interface-settings li", props: { y: -1000 }, duration: 1.5 },// animação dos contatos
+  { selector: ".interface-settings", props: { left: "calc(50% - 100px)", opacity: 1 }, duration: 0 }, 
+  { selector: ".interface-settings", props: { left: "50%", opacity: 1 }, duration: 1.5 } 
+  
+  
 ];
+document.querySelector('.interface-settings').classList.add('show');
+
 
 animateElements(enterSequence, initialAnimations);
 enterSequence.play();

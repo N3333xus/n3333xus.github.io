@@ -340,11 +340,19 @@ img{
 .settings-pink{
     color:var(--w-selected-text);
 }
-.interface-settings{
+.interface-settings {
     position: fixed;
-    bottom: 15px;
-    /*left: 350px; me na possição dos contatos*/
-    
+    bottom: 100px;
+    left: -350px; /* Inicialmente fora da tela */
+    transition: left 1.5s, transform 1.5s; /* Transições suaves */
+    opacity: 0; /* Começa invisível */
+    will-change: transform; /* Otimização para animação */
+}
+
+.interface-settings.show {
+    left: 50%;
+   
+    opacity: 1; /* Aparece na animação */
 }
 .interface-settings ul{
     display: flex;
