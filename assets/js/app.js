@@ -33,16 +33,31 @@ const content = {
               <div class="work-gallery">
                   <div class="work-project-card card-6">
                       <h1 class="work-project-card-title tooltip ">
-                          Exemplo de projeto 1 <span class="tooltiptext">
+                          FileTransmute <span class="tooltiptext">
                           Ideias de projeto: 
-                          <br>-ideia1 
-                          <br>-ideia2
+                          <br>-Aplicação Desktop Linux 
+                          <br>-Conversor de formatos arquivos
                           </span>
                       </h1>
                       <a href="https://github.com/magomarto/Georunner" target="_blank">
                           <img class="workPic tooltip" src="https://github.com/magomarto/Georunner">
                       </a> 
                       <a href="https://github.com/magomarto/Georunner">  
+                          <p class="button-project btn-github">Ir para GITHUB</p>
+                      </a>
+                  </div>
+                  <div class="work-project-card card-6">
+                      <h1 class="work-project-card-title tooltip ">
+                          VoidChat<span class="tooltiptext">
+                          Ideias de projeto: 
+                          <br>-Tráfego criptografado 
+                          <br>-Chat em tempo real
+                          </span>
+                      </h1>
+                      <a href="https://github.com/magomarto/VoidChat" target="_blank">
+                          <img class="workPic tooltip" src="https://github.com/magomarto/VoidChat">
+                      </a> 
+                      <a href="https://github.com/magomarto/VoidChat">  
                           <p class="button-project btn-github">Ir para GITHUB</p>
                       </a>
                   </div>
@@ -59,7 +74,7 @@ const content = {
                       <p> Minha especialidade inclui:
                       <p>- Python <i class="fab fa-python"></i>, Django, GNU/Linux <i class="fab fa-linux"></i> e PostgreSQL <i class="fas fa-database"></i></p></p>
                       <p>Mas também uso:</p>
-                      <p>- JavaScript <i class="fa-brands fa-js"></i>, C#, C++ and Shell Scripts<br/>
+                      <p>- JavaScript <i class="fa-brands fa-js"></i>, C#, C++ e Shell Scripts<br/>
                       - Git/Github <i class="fa-brands fa-git-alt"></i></p>
                       <p> Atualmente estou aprofundando meu conhecimento em GNU/Linux <i class="fab fa-linux"></i> e Redes de Computadores <i class="fa-solid fa-globe"></i></p>
                       <p> Estou me preparando para as Certificações: CCNA e LPIC-1</p>
@@ -111,16 +126,31 @@ const content = {
               <div class="work-gallery">
                   <div class="work-project-card card-6">
                       <h1 class="work-project-card-title tooltip ">
-                          Example project 1 <span class="tooltiptext">
-                          Project idea: 
-                          <br>-idea1 
-                          <br>-idea2
+                          FileTransmute <span class="tooltiptext">
+                          Project ideas: 
+                          <br>-Linux Desktop Application
+                          <br>-File format converter
                           </span>
                       </h1>
-                      <a href="https://github.com/magomarto/Georunner" target="_blank">
-                          <img class="workPic tooltip" src="https://github.com/magomarto/Georunner">
+                      <a href="https://github.com/magomarto/FileTransmute" target="_blank">
+                          <img class="workPic tooltip" src="https://github.com/magomarto/FileTransmute">
                       </a> 
-                      <a href="https://github.com/magomarto/Georunner">  
+                      <a href="https://github.com/magomarto/FileTransmute">  
+                          <p class="button-project btn-github">Go to GITHUB</p>
+                      </a>
+                  </div>
+                  <div class="work-project-card card-6">
+                      <h1 class="work-project-card-title tooltip ">
+                          VoidChat<span class="tooltiptext">
+                          Project Ideas: 
+                          <br>-Encrypted traffic
+                          <br>-Real Time Chat
+                          </span>
+                      </h1>
+                      <a href="https://github.com/magomarto/VoidChat" target="_blank">
+                          <img class="workPic tooltip" src="https://github.com/magomarto/VoidChat">
+                      </a> 
+                      <a href="https://github.com/magomarto/VoidChat">  
                           <p class="button-project btn-github">Go to GITHUB</p>
                       </a>
                   </div>
@@ -139,7 +169,7 @@ const content = {
                       <p>But I also use:</p>
                       <p>- JavaScript<i class="fa-brands fa-js"></i>, C#, C++, Shell Scripts<br/>
                       - Git/Github <i class="fa-brands fa-git-alt"></i>, APACHE<i class="fa-solid fa-server"></i></p>
-                      <p> Currently, I am deepening my knowledge in GNU/Linux <i class="fab fa-linux"></i> and Computer Networks <i class="fa-solid fa-globe"></i></p>
+                      <p> Currently, I am deepening in GNU/Linux <i class="fab fa-linux"></i> and Computer Networks <i class="fa-solid fa-globe"></i></p>
                       <p> I am preparing for the Certifications: CCNA and LPIC-1</p>
                   </div>
               </div>
