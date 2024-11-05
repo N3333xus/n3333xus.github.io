@@ -41,7 +41,8 @@ const content = {
                       </h1>
                       <a href="https://github.com/magomarto/Georunner" target="_blank">
                           <img class="workPic tooltip" src="https://github.com/magomarto/Georunner">
-                      </a> 
+                      </a>
+                      <p>FileTransmute é uma aplicação desktop Linux que permite a conversão de diversos formatos de arquivos</p> 
                       <a href="https://github.com/magomarto/Georunner">  
                           <p class="button-project btn-github">Ir para GITHUB</p>
                       </a>
@@ -56,7 +57,8 @@ const content = {
                       </h1>
                       <a href="https://github.com/magomarto/VoidChat" target="_blank">
                           <img class="workPic tooltip" src="https://github.com/magomarto/VoidChat">
-                      </a> 
+                      </a>
+                      <p>VoidChat é um chat de terminal em tempo real com tráfego criptografado, projetado para funcionar em ambientes P2P</p>
                       <a href="https://github.com/magomarto/VoidChat">  
                           <p class="button-project btn-github">Ir para GITHUB</p>
                       </a>
@@ -75,7 +77,7 @@ const content = {
                       <p>- Python <i class="fab fa-python"></i>, Django, GNU/Linux <i class="fab fa-linux"></i> e PostgreSQL <i class="fas fa-database"></i></p></p>
                       <p>Mas também uso:</p>
                       <p>- JavaScript <i class="fa-brands fa-js"></i>, C#, C++ e Shell Scripts<br/>
-                      - Git/Github <i class="fa-brands fa-git-alt"></i></p>
+                      - Docker, Git/Github <i class="fa-brands fa-git-alt"></i></p>
                       <p> Atualmente estou aprofundando meu conhecimento em GNU/Linux <i class="fab fa-linux"></i> e Redes de Computadores <i class="fa-solid fa-globe"></i></p>
                       <p> Estou me preparando para as Certificações: CCNA e LPIC-1</p>
                   </div>
@@ -134,7 +136,8 @@ const content = {
                       </h1>
                       <a href="https://github.com/magomarto/FileTransmute" target="_blank">
                           <img class="workPic tooltip" src="https://github.com/magomarto/FileTransmute">
-                      </a> 
+                      </a>
+                      <p>FileTransmute is a Linux desktop app for file format conversion</p> 
                       <a href="https://github.com/magomarto/FileTransmute">  
                           <p class="button-project btn-github">Go to GITHUB</p>
                       </a>
@@ -150,6 +153,7 @@ const content = {
                       <a href="https://github.com/magomarto/VoidChat" target="_blank">
                           <img class="workPic tooltip" src="https://github.com/magomarto/VoidChat">
                       </a> 
+                      <p>VoidChat is a real-time chat with encrypted traffic, designed to work in P2P environments</p>
                       <a href="https://github.com/magomarto/VoidChat">  
                           <p class="button-project btn-github">Go to GITHUB</p>
                       </a>
@@ -168,7 +172,7 @@ const content = {
                       <p>- Python<i class="fab fa-python"></i>, Django, GNU/Linux<i class="fab fa-linux"></i> and PostgreSQL<i class="fas fa-database"></i></p></p>
                       <p>But I also use:</p>
                       <p>- JavaScript<i class="fa-brands fa-js"></i>, C#, C++, Shell Scripts<br/>
-                      - Git/Github <i class="fa-brands fa-git-alt"></i>, APACHE<i class="fa-solid fa-server"></i></p>
+                      - Docker, Git/Github <i class="fa-brands fa-git-alt"></i>, APACHE<i class="fa-solid fa-server"></i></p>
                       <p> Currently, I am deepening in GNU/Linux <i class="fab fa-linux"></i> and Computer Networks <i class="fa-solid fa-globe"></i></p>
                       <p> I am preparing for the Certifications: CCNA and LPIC-1</p>
                   </div>
