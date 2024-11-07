@@ -29,9 +29,9 @@ const content = {
           </section>
       `,
       work: `
-          <div class="work-content work-content-card">
+          <div class="work-content work-content-card"> 
               <div class="work-gallery">
-                  <div class="work-project-card card-6">
+                  <div class="work-project-card card-6"> <!-- PROJETO 1 -->
                       <h1 class="work-project-card-title tooltip ">
                           FileTransmute <span class="tooltiptext">
                           Ideias de projeto: 
@@ -47,8 +47,8 @@ const content = {
                           <p class="button-project btn-github">Ir para GITHUB</p>
                       </a>
                   </div>
-                  <div class="work-project-card card-6">
-                      <h1 class="work-project-card-title tooltip ">
+                  <div class="work-project-card card-6"> <!-- PROJETO 2 -->
+                      <h1 class="work-project-card-title tooltip "> 
                           VoidChat<span class="tooltiptext">
                           Ideias de projeto: 
                           <br>-Tráfego criptografado 
@@ -61,6 +61,22 @@ const content = {
                       <p>VoidChat é um chat de terminal em tempo real com tráfego criptografado, projetado para funcionar em ambientes P2P</p>
                       <a href="https://github.com/magomarto/VoidChat">  
                           <p class="button-project btn-github">Ir para GITHUB</p>
+                      </a>
+                  </div>
+                  <div class="work-project-card card-6"> <!-- PROJETO 3 -->
+                      <h1 class="work-project-card-title tooltip ">
+                          Neurobunker<span class="tooltiptext">
+                          Ideias de projeto: 
+                          <br>-Compartilhar conhecimento
+                          <br>-Sistema de postagem de artigos
+                          </span>
+                      </h1>
+                      <a href="https://neurobunker.org" target="_blank">
+                          <img class="workPic tooltip" src="https://neurobunker.org">
+                      </a>
+                      <p>Neurobunker é um projeto pessoal que visa compartilhar artigos de TI em uma linguagem simples e direta mas sem deixar de lado os elementos técnicos, é uma forma de retribuir à comunidade de tecnologia o que eu aprendi com a mesma.</p>
+                      <a href="https://neurobunker.org">  
+                          <p class="button-project btn-github">Ir para o Website</p>
                       </a>
                   </div>
               </div>
@@ -126,7 +142,7 @@ const content = {
       work: `
           <div class="work-content work-content-card">
               <div class="work-gallery">
-                  <div class="work-project-card card-6">
+                  <div class="work-project-card card-6"> <!-- PROJETO 1 -->
                       <h1 class="work-project-card-title tooltip ">
                           FileTransmute <span class="tooltiptext">
                           Project ideas: 
@@ -142,7 +158,7 @@ const content = {
                           <p class="button-project btn-github">Go to GITHUB</p>
                       </a>
                   </div>
-                  <div class="work-project-card card-6">
+                  <div class="work-project-card card-6"> <!-- PROJETO 2 -->
                       <h1 class="work-project-card-title tooltip ">
                           VoidChat<span class="tooltiptext">
                           Project Ideas: 
@@ -150,12 +166,28 @@ const content = {
                           <br>-Real Time Chat
                           </span>
                       </h1>
-                      <a href="https://github.com/magomarto/VoidChat" target="_blank">
+                      <a href="https://github.com/magomarto/VoidChat" target="_blank"> 
                           <img class="workPic tooltip" src="https://github.com/magomarto/VoidChat">
                       </a> 
                       <p>VoidChat is a real-time chat with encrypted traffic, designed to work in P2P environments</p>
                       <a href="https://github.com/magomarto/VoidChat">  
                           <p class="button-project btn-github">Go to GITHUB</p>
+                      </a>
+                  </div>
+                  <div class="work-project-card card-6"> <!-- PROJETO 3 -->
+                      <h1 class="work-project-card-title tooltip ">
+                          Neurobunker<span class="tooltiptext">
+                          Ideias de projeto: 
+                          <br>-Share knowlodge
+                          <br>-Article posting system
+                          </span>
+                      </h1>
+                      <a href="https://neurobunker.org" target="_blank">
+                          <img class="workPic tooltip" src="https://neurobunker.org">
+                      </a>
+                      <p>Neurobunker is a personal project that aims to share IT articles in a simple and direct language but without leaving aside the technical elements, it is a way to give back to the technology community what I learned from it.</p>
+                      <a href="https://neurobunker.org">  
+                          <p class="button-project btn-github">Go to Website</p>
                       </a>
                   </div>
               </div>
@@ -175,6 +207,22 @@ const content = {
                       - Docker, Git/Github <i class="fa-brands fa-git-alt"></i>, APACHE<i class="fa-solid fa-server"></i></p>
                       <p> Currently, I am deepening in GNU/Linux <i class="fab fa-linux"></i> and Computer Networks <i class="fa-solid fa-globe"></i></p>
                       <p> I am preparing for the Certifications: CCNA and LPIC-1</p>
+                  </div>
+                  <div class="work-project-card card-6">
+                      <h1 class="work-project-card-title tooltip ">
+                          VoidChat<span class="tooltiptext">
+                          Ideias de projeto: 
+                          <br>-Tráfego criptografado 
+                          <br>-Chat em tempo real
+                          </span>
+                      </h1>
+                      <a href="https://github.com/magomarto/VoidChat" target="_blank">
+                          <img class="workPic tooltip" src="https://github.com/magomarto/VoidChat">
+                      </a>
+                      <p>VoidChat é um chat de terminal em tempo real com tráfego criptografado, projetado para funcionar em ambientes P2P</p>
+                      <a href="https://github.com/magomarto/VoidChat">  
+                          <p class="button-project btn-github">Ir para GITHUB</p>
+                      </a>
                   </div>
               </div>
           </div>
