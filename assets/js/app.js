@@ -208,22 +208,6 @@ const content = {
                       <p> Currently, I am deepening in GNU/Linux <i class="fab fa-linux"></i> and Computer Networks <i class="fa-solid fa-globe"></i></p>
                       <p> I am preparing for the Certifications: CCNA and LPIC-1</p>
                   </div>
-                  <div class="work-project-card card-6">
-                      <h1 class="work-project-card-title tooltip ">
-                          VoidChat<span class="tooltiptext">
-                          Ideias de projeto: 
-                          <br>-Tráfego criptografado 
-                          <br>-Chat em tempo real
-                          </span>
-                      </h1>
-                      <a href="https://github.com/magomarto/VoidChat" target="_blank">
-                          <img class="workPic tooltip" src="https://github.com/magomarto/VoidChat">
-                      </a>
-                      <p>VoidChat é um chat de terminal em tempo real com tráfego criptografado, projetado para funcionar em ambientes P2P</p>
-                      <a href="https://github.com/magomarto/VoidChat">  
-                          <p class="button-project btn-github">Ir para GITHUB</p>
-                      </a>
-                  </div>
               </div>
           </div>
       `,
