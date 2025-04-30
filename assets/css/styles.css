@@ -110,17 +110,9 @@ body {
   text-shadow: 0 0 10px #24f29c;
 }
 
-.teaser-title--jp {
-  font-size: 20px;
-  margin-bottom: 1rem;
-}
 
-.teaser-desc {
-  max-width: 600px;
-  margin: 2rem auto;
-  font-size: 1.2rem;
-  line-height: 1.5;
-}
+
+
 
 /* Botões */
 .btn--nav {
