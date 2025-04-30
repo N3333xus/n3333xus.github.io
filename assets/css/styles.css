@@ -1,0 +1,286 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Mega Man 10';
+  src: url('https://cdn.prod.website-files.com/63bed04d31b38cef7f1f79eb/63bed04d31b38c976d1f79f2_MegaMan10Regular-mJA5.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000;
+  color: #24f29c;
+  font-family: 'Mega Man 10', monospace;
+  overflow-x: hidden;
+}
+
+
+/* Efeito CRT */
+.crt {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(18, 16, 16, 0.1) 50%, rgba(0, 0, 0, 0.1) 50%),
+    linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+  z-index: 999;
+  animation: scanline 6s linear infinite;
+}
+
+@keyframes scanline {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+/* Grid Cyberpunk */
+.grid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent 0%,
+    transparent 1px,
+    rgba(36, 242, 156, 0.1) 1px,
+    rgba(36, 242, 156, 0.1) 2px
+  );
+  z-index: 0;
+}
+
+.grid-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, 
+    rgba(0,0,0,1) 0%,
+    rgba(0,0,0,0.8) 20%,
+    rgba(0,0,0,0) 50%,
+    rgba(0,0,0,0.8) 80%,
+    rgba(0,0,0,1) 100%
+  );
+}
+/* .teaser-logo {
+  color: #24f29c;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  margin-right: -1.5rem;
+  display: block;
+}*/
+
+
+/* Seção Teaser */
+.teaser {
+  position: relative;
+  z-index: 100;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem;
+  text-align: center;
+}
+
+.teaser-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  margin: 2rem 0;
+  text-shadow: 0 0 10px #24f29c;
+}
+
+.teaser-title--jp {
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+.teaser-desc {
+  max-width: 600px;
+  margin: 2rem auto;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/* Botões */
+.btn--nav {
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  font-size: 10px;
+  border: 2px solid #24f29c;
+  background: transparent;
+  color: #24f29c;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn--nav:hover {
+  background: #24f29c;
+  color: #000;
+  box-shadow: 0 0 20px #24f29c;
+}
+
+
+/* Container de frases */
+.container-phrase {
+  margin: 2rem 0;
+  font-size: 11px;
+  padding: 1rem;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+/* FOOTER CYBERPUNK */
+.footer {
+  position: relative;
+  align-items: center;
+
+}
+
+.interface-settings ul {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.interface-settings a {
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.interface-settings i {
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Efeito Holográfico */
+.settings-green { color: #24f29c; }
+.settings-blue { color: #00f3ff; }
+.settings-pink { color: #ff00ff; }
+
+.interface-settings a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid currentColor;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.3s ease;
+}
+
+.interface-settings a:hover {
+  filter: drop-shadow(0 0 12px currentColor);
+  transform: translateY(-3px);
+}
+
+.interface-settings a:hover::before {
+  opacity: 1;
+  transform: scale(1);
+  animation: hologram 1.5s infinite;
+}
+
+
+
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+/* Animação de digitação */
+#typed {
+  border-right: 2px solid #24f29c;
+  padding-right: 5px;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .teaser-title {
+    font-size: 2.5rem;
+  }
+  
+  .teaser-title--jp {
+    font-size: 1.8rem;
+  }
+  
+  .btn--reservation {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .teaser-title {
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+  }
+  
+  .business-hours__day {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.glitch-effect {
+  animation: glitch 1s linear infinite;
+}
+
+@keyframes glitch {
+  2%, 64% { transform: translate(2px,0) skew(0deg); }
+  4%, 60% { transform: translate(-2px,0) skew(0deg); }
+  62% { transform: translate(0,0) skew(5deg); }
+}
+
+.cyberlink .link-hover {
+  display: inline-block;
+  width: 0;
+  height: 1px;
+  background: #24f29c;
+  transition: width 0.3s ease;
+}
+
+.cyberlink:hover .link-hover {
+  width: 100%;
+}
