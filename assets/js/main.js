@@ -6,13 +6,12 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function initCyberEffects() {
-  // Efeito de digitação glitch
   const el = document.querySelector('#typed');
   if (el && typeof Typed !== 'undefined') {
       new Typed(el, {
           strings: [
-              'I am Lucas^10000',
-              'I Develop Software^10000',
+              'I am Lucas^9000',
+              'I Develop Software^1000000',
           ],
           typeSpeed: 40,
           backSpeed: 0,
@@ -25,7 +24,6 @@ function initCyberEffects() {
   }
   
 
-  // Animação da grid reativa
   const grid = document.querySelector('.grid-lines');
   let mouseX = 0, mouseY = 0;
   const centerX = window.innerWidth/2;
@@ -73,7 +71,6 @@ function showPhraseAndAuthor() {
   const elementAuthor = document.getElementById('author');
   const phrase = getRandomPhrase();
 
-  // Adiciona efeito de fade out
   elementPhrase.classList.remove('fade-in');
   elementAuthor.classList.remove('fade-in');
   
@@ -81,7 +78,6 @@ function showPhraseAndAuthor() {
       elementPhrase.textContent = phrase.phrase;
       elementAuthor.textContent = phrase.author;
       
-      // Adiciona efeito de fade in
       elementPhrase.classList.add('fade-in');
       elementAuthor.classList.add('fade-in');
   }, 500);
@@ -92,7 +88,6 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(showPhraseAndAuthor, 60000);
 });
 
-// Aprimoramento de links
 function enhanceExternalLinks() {
   document.querySelectorAll('a[target="_blank"]').forEach(link => {
       link.classList.add('cyberlink');

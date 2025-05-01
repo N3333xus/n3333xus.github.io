@@ -87,7 +87,34 @@ body {
   margin-right: -1.5rem;
   display: block;
 }*/
+pre {
+  font-family: 'Courier New', monospace; /* Fonte mono espaçada */
+  font-size: 12px; /* Tamanho ideal para ASCII art */
+  white-space: pre-wrap; /* Preserva formatação */
+  word-wrap: break-word; /* Quebra linhas longas */
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 600px; /* Largura máxima */
+  overflow-x: auto; /* Scroll horizontal se necessário */
+  color: #24f29c;
+  text-align: center; /* Centraliza a arte */
+}
 
+/* Versão mobile */
+@media (max-width: 768px) {
+  pre {
+    font-size: 8px;
+    max-width: 90%;
+  }
+}
+
+/* Versão mobile */
+@media (max-width: 768px) {
+  pre {
+    font-size: 8px;
+    max-width: 90%;
+  }
+}
 
 /* Seção Teaser */
 .teaser {
