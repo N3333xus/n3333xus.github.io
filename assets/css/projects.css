@@ -1,77 +1,71 @@
 /* Container principal */
 .project-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-  }
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
   
   /* Grid de projetos */
-  .project-gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    padding: 1rem;
-  }
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 1rem;
+}
   
-  .project-project-card {
-    /* Adicione estas 2 propriedades */
-    display: flex;
-    flex-direction: column;
-    /* O restante mantém igual */
-    background: #000;
-    border: 1px solid #24f29c33;
-    border-radius: 8px;
-    padding: 1.5rem;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
-    overflow: hidden;
-    min-height: 500px;
-  }
+.project-project-card {
+  display: flex;
+  flex-direction: column;
+  background: #000;
+  border: 1px solid #24f29c33;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  min-height: 500px;
+}
   
-  .project-project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 20px #24f29c33;
-    border-color: #24f29c;
-  }
+.project-project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #24f29c33;
+  border-color: #24f29c;
+}
   
-  /* Imagens */
-  .projectPic {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 4px;
-    border: 1px solid #24f29c33;
-    margin-bottom: 1rem;
-    transition: all 0.3s ease;
-  }
+.projectPic {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #24f29c33;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.projectPic:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px #24f29c33;
+}
+
+.project-project-card-title {
+  color: #24f29c;
+  font-size: 1rem;
+  margin-bottom: 1rem;
   
-  .projectPic:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0 15px #24f29c33;
-  }
+}
   
-  /* Textos */
-  .project-project-card-title {
-    color: #24f29c;
-    font-size: 1.5rem;
+.project-project-card p {
+    flex-grow: 1;
+    color: #a0a0a0;
+    font-size: 1rem;
     margin-bottom: 1rem;
     font-family: 'Courier New', monospace;
-  }
-  
-/* Parágrafo */
-.project-project-card p {
-    /* Adicione isto */
-    flex-grow: 1;
-    /* O restante mantém igual */
-    color: #a0a0a0;
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-  }
+}
   
   /* Botões */
 .button-project {
-    margin-top: auto; /* Empurra o botão para baixo */
-    align-self: flex-start; /* Alinhamento à esquerda */
+    margin-top: auto; 
+    align-self: flex-start; 
     display: inline-flex;
     padding: 1rem 2rem;
     margin: 0.5rem;
@@ -93,55 +87,55 @@
 }
   
   /* Tooltip */
-  .tooltip {
-    position: relative;
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background: #24f29c;
+  color: #000;
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .project-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .project-gallery {
+    grid-template-columns: 1fr;
   }
   
-  .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background: #24f29c;
-    color: #000;
-    text-align: center;
-    border-radius: 4px;
-    padding: 5px;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    transition: opacity 0.3s;
+  .project-project-card {
+    padding: 1rem;
   }
   
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
+  .projectPic {
+    height: 150px;
   }
-  
-  /* Responsividade */
-  @media (max-width: 1024px) {
-    .project-gallery {
-      grid-template-columns: repeat(2, 1fr);
-    }
+}
+@media (max-width: 768px) {
+  .project-project-card {
+    /* Ajuste para mobile */
+    min-height: auto;
   }
-  
-  @media (max-width: 768px) {
-    .project-gallery {
-      grid-template-columns: 1fr;
-    }
-    
-    .project-project-card {
-      padding: 1rem;
-    }
-    
-    .projectPic {
-      height: 150px;
-    }
-  }
-  @media (max-width: 768px) {
-    .project-project-card {
-      /* Ajuste para mobile */
-      min-height: auto;
-    }
-  }
+}

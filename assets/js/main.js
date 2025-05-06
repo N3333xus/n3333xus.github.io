@@ -16,8 +16,8 @@ function initCyberEffects() {
           typeSpeed: 40,
           backSpeed: 0,
           loop: false,
-          showCursor: true,
-          cursorChar: '█',
+          showCursor: false,
+          //cursorChar: '█',
           onStringTyped: () => el.classList.add('glitch-effect'),
           onPreStringTyped: () => el.classList.remove('glitch-effect')
       });
