@@ -133,7 +133,7 @@ pre {
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
-  margin: 2rem 0;
+  margin: 1rem 0;
   text-shadow: 0 0 10px #24f29c;
 }
 
@@ -181,6 +181,7 @@ pre {
 .footer {
   position: relative;
   align-items: center;
+  text-decoration: none;
 
 }
 
@@ -210,8 +211,8 @@ pre {
 }
 
 /* Efeito Holográfico */
-.settings-green { color: #24f29c; }
-.settings-blue { color: #00f3ff; }
+.settings-green { color: #ffffff; }
+.settings-blue { color: #0084ff; }
 .settings-pink { color: #ff00ff; }
 
 .interface-settings a::before {
@@ -219,7 +220,6 @@ pre {
   position: absolute;
   width: 100%;
   height: 100%;
-  border: 2px solid currentColor;
   opacity: 0;
   transform: scale(0.8);
   transition: all 0.3s ease;

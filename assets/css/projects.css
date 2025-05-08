@@ -2,14 +2,14 @@
 .project-content {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
 }
   
   /* Grid de projetos */
 .project-gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 1rem;
   padding: 1rem;
 }
   
@@ -35,7 +35,7 @@
 .projectPic {
   width: 100%;
   height: 200px;
-  object-fit: cover;
+  object-fit: fill;
   border-radius: 4px;
   border: 1px solid #24f29c33;
   margin-bottom: 1rem;
@@ -56,7 +56,7 @@
   
 .project-project-card p {
     flex-grow: 1;
-    color: #a0a0a0;
+    color: #F2F0EF;
     font-size: 1rem;
     margin-bottom: 1rem;
     font-family: 'Courier New', monospace;
