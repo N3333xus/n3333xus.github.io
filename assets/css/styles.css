@@ -7,10 +7,15 @@
 
 @font-face {
   font-family: 'Mega Man 10';
+  
   src: url('https://cdn.prod.website-files.com/63bed04d31b38cef7f1f79eb/63bed04d31b38c976d1f79f2_MegaMan10Regular-mJA5.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
+}
+.teaser-title--jp {
+  
+  font-family: "DotGothic16", sans-serif;
 }
 
 html {
