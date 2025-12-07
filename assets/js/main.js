@@ -57,7 +57,7 @@ const phrases = [
   {phrase :" Your Body Can Be Chrome... But The Heart Never Changes. It Wants What It Wants.", author : "-- Lizzy Wizzy "},
   {phrase :" I've seen things you people wouldn't believe. Attack ships on fire off the shoulder of Orion. I watched C-beams glitter in the darkness at Tan Hauser Gate. All those moments will be lost in time like tears in rain. Time to die.", author : "-- Roy Batty"},
   {phrase :" The sky above the port was the color of television, tuned to a dead channel.", author : "-- Willian Gibson"},
-  {phrase :" What is real? How do you define ‘real’? If you’re talking about what you can feel, what you can smell, what you can taste and see, then ‘real’ is simply electrical signals interpreted by your brain.", author : "-- Morpheus"},
+  {phrase :" What is real? How do you define ‘real’?", author : "-- Morpheus"},
 ];
 
 
