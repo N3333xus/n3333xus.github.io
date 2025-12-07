@@ -55,7 +55,7 @@ const phrases = [
   {phrase :" We Shouldn’t Fear Change Itself, But Only Who We Might Change Into.", author : "–- Misty"}, 
   {phrase :" I want to get online... I need a computer!", author : "-- Johnny Mnemonic"},
   {phrase :" Your Body Can Be Chrome... But The Heart Never Changes. It Wants What It Wants.", author : "-- Lizzy Wizzy "},
-  {phrase :" I've seen things you people wouldn't believe. Attack ships on fire off the shoulder of Orion. I watched C-beams glitter in the darkness at Tan Hauser Gate. All those moments will be lost in time like tears in rain. Time to die.", author : "-- Roy Batty"},
+  // {phrase :" I've seen things you people wouldn't believe. Attack ships on fire off the shoulder of Orion. I watched C-beams glitter in the darkness at Tan Hauser Gate. All those moments will be lost in time like tears in rain. Time to die.", author : "-- Roy Batty"},
   {phrase :" The sky above the port was the color of television, tuned to a dead channel.", author : "-- Willian Gibson"},
   {phrase :" What is real? How do you define ‘real’?", author : "-- Morpheus"},
 ];

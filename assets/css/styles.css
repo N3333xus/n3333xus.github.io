@@ -14,7 +14,6 @@
   font-display: swap;
 }
 .teaser-title--jp {
-  
   font-family: "DotGothic16", sans-serif;
 }
 
@@ -53,7 +52,7 @@ body {
   100% { transform: translateY(100%); }
 }
 
-/* Grid Cyberpunk */
+/* Grid */
 .grid {
   position: fixed;
   top: 0;
@@ -142,7 +141,16 @@ pre {
   text-shadow: 0 0 10px #24f29c;
 }
 
+.teaser-desc{
+  font-family: "Science Gothic", sans-serif;
+  font-style: italic;
+  font-size: 20px;
+}
 
+.teaser-title--en {
+  font-family: "Science Gothic", sans-serif;
+  text-transform: uppercase;
+}
 
 
 
@@ -172,15 +180,19 @@ pre {
 
 /* Container de frases */
 .container-phrase {
-  margin: 2rem 0;
-  font-size: 11px;
+  font-family: "Share Tech Mono", monospace;
+  margin: 1rem 0;
+  font-size: 17px;
   padding: 1rem;
+  font-style: italic;
 }
 
 .fade-in {
   opacity: 0;
   animation: fadeIn 1s ease-in forwards;
 }
+
+
 
 /* FOOTER */
 .footer {

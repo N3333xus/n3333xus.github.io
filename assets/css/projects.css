@@ -10,7 +10,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  padding: 1rem;
+  /*padding: 1rem*/
 }
   
 .project-project-card {
@@ -49,17 +49,20 @@
 
 .project-project-card-title {
   color: #24f29c;
-  font-size: 1rem;
+  font-size: 1.4rem;
   margin-bottom: 1rem;
+  font-family: "Science Gothic", sans-serif;
+  font-style:oblique
+  
   
 }
-  
+ 
 .project-project-card p {
     flex-grow: 1;
     color: #F2F0EF;
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-bottom: 1rem;
-    font-family: 'Courier New', monospace;
+    font-family: "Share Tech Mono", monospace;
 }
   
   /* Botões */
@@ -69,7 +72,7 @@
     display: inline-flex;
     padding: 1rem 2rem;
     margin: 0.5rem;
-    font-size: 10px;
+    font-size: 1.0rem;
     border: 2px solid #24f29c;
     background: transparent;
     color: #24f29c;
@@ -77,7 +80,6 @@
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
-
 }
   
   .button-project:hover {
